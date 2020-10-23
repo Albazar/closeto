@@ -10,8 +10,13 @@
     "test": "jest",
     "coverage": "jest --coverage"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Albazar/closeto.git"
+  },
   "author": "albazar",
   "license": "ISC",
+  "keywords": [ "math", "precision" ],
   "devDependencies": {
     "jest": "^26.5.3",
     "ts-jest": "^26.4.1",
