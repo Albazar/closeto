@@ -1,6 +1,6 @@
 {
   "name": "closeto",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Number comparison with a tolerance.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -16,7 +16,10 @@
   },
   "author": "albazar",
   "license": "ISC",
-  "keywords": [ "math", "precision" ],
+  "keywords": [
+    "math",
+    "precision"
+  ],
   "devDependencies": {
     "jest": "^26.5.3",
     "ts-jest": "^26.4.1",
