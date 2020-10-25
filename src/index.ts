@@ -23,6 +23,15 @@ export class CloseTo {
     }
 
     /**
+     * Check if 'a' and 'b' are NOT equal with the set precision.
+     * @param a number
+     * @param b number
+     */
+    public notEquals = (a: number, b: number): boolean => {
+        return !this.equals(a, b);
+    }
+
+    /**
      * Check if 'a' is greater than 'b' or with in the set precision.
      * @param a number
      * @param b number
