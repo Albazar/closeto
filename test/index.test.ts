@@ -3,11 +3,19 @@ import { CloseTo } from "../src";
 describe('CloseTo', () => {
 
     const closeTo = new CloseTo(1e-1);
+
     it('equals', () => {
         expect(closeTo.equals(1.1, 1.0)).toBeFalsy();
         expect(closeTo.equals(1.0, 1.01)).toBeTruthy();
         expect(closeTo.equals(1.0, 0.99)).toBeTruthy();
         expect(closeTo.equals(1.0, 1.1)).toBeFalsy();
+    });
+
+    it('notEquals', () => {
+        expect(closeTo.notEquals(1.1, 1.0)).toBeTruthy();
+        expect(closeTo.notEquals(1.0, 1.01)).toBeFalsy();
+        expect(closeTo.notEquals(1.0, 0.99)).toBeFalsy();
+        expect(closeTo.notEquals(1.0, 1.1)).toBeTruthy();
     });
 
     it('greaterThanOrEqual', () => {
